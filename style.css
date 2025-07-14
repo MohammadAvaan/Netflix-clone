@@ -245,3 +245,71 @@ nav button {
     height: 100px;
   }
 }
+
+
+/* Netflix-style Footer */
+.footer {
+  background-color: #111;
+  color: #999;
+  padding:40px 20px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-content p {
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.language-select {
+  margin-bottom: 20px;
+}
+
+.language-select select {
+  background-color: transparent;
+  border: 1px solid #999;
+  color: #999;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.brand {
+  font-size: 13px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
