@@ -85,6 +85,7 @@ nav button {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main input {
@@ -154,4 +155,93 @@ nav button {
 
 .image-scroll li img:hover {
   transform: scale(1.05);
+}
+
+/* ==========================
+   📱 Responsive Media Queries
+   ========================== */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  nav {
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .main .box {
+    height: 100%;
+  }
+
+  .hero {
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 36px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 20px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main input {
+    max-width: 100%;
+  }
+
+  .image-scroll li img {
+    height: 120px;
+  }
+}
+
+/* Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav img {
+    width: 90px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 24px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 16px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .btn-red {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .main input {
+    font-size: 14px;
+  }
+
+  .image-scroll li img {
+    height: 100px;
+  }
 }
