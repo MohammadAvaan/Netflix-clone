@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&family=Poppins:wght@300;400;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Main background */
+.main {
+  background-image: url(assets/images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+}
+
+.main .box {
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Navbar */
+nav {
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  position: relative;
+  z-index: 10;
+}
+
+nav img {
+  width: 114px;
+}
+
+nav button {
+  margin-left: 10px;
+}
+
+/* Hero section */
+.hero {
+  height: calc(100% - 62px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 23px;
+  padding: 0 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.main input {
+  padding: 12px 20px;
+  color: white;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  border-radius: 4px;
+  font-size: 16px;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 10px 24px;
+  font-size: 18px;
+  border: none;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+}
+
+/* Separation line */
+.separation {
+  height: 7px;
+  background-color: rgb(47, 45, 45);
+}
+
+/* Image Gallery - Horizontal Scroll */
+.image-gallery {
+  padding: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #141414;
+}
+
+.image-scroll {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+
+.image-scroll li img {
+  height: 150px;
+  width: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.image-scroll li img:hover {
+  transform: scale(1.05);
+}
